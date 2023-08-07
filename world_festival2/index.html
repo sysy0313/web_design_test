@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Festival</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/script.js" defer type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="./images/logo.png" alt="World Festival"></a></h1>
+        <nav>
+            <ul id="gnb">
+                <li><!-- 1 축제소개-->
+                    <a href="#">축제소개</a>
+                    <ul class="sub">
+                        <li><a href="#">Festival 소개</a></li>
+                        <li><a href="#">행사장 안내</a></li>
+                        <li><a href="#">조직위원회</a></li>
+                    </ul>
+                </li>
+                <li><!-- 2 예약안내-->
+                    <a href="#">예약안내</a>
+                    <ul class="sub">
+                        <li><a href="#">예약하기</a></li>
+                        <li><a href="#">예약확인/취소</a></li>
+                        <li><a href="#">단체예약문의</a></li>
+                    </ul>
+                </li>
+                <li><!-- 3 아티스트-->
+                    <a href="#">아티스트</a>
+                    <ul class="sub">
+                        <li><a href="#">두유노킹콩</a></li>
+                        <li><a href="#">우기욱이</a></li>
+                        <li><a href="#">예공주</a></li>
+                        <li><a href="#">우빈밴드</a></li>
+                    </ul>
+                </li>
+                <li><!-- 4 커뮤니티-->
+                    <a href="#">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">사진갤러리</a></li>
+                        <li><a href="#">영상갤러리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav><!-- 네비끝 -->
+    </header>
+    <div class="wrap">
+        <main>
+            <div class="image_slide"><!--  이미지슬라이드 -->
+                <a href="#" class="slide">
+                    <img src="./images/slide1.jpg" alt="">
+                    <span>World Fesival 1</span>
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slide2.jpg" alt="">
+                    <span>World Fesival 2</span>
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slide3.jpg" alt="">
+                    <span>World Fesival 3</span>
+                </a>
+            </div><!-- 이미지슬라이드 끝 -->
+            <div class="content"><!-- 컨텐즈 - 공지사항, 갤러리, 바로가기 -->
+                <div class="notice">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li><!-- 공지1 -->
+                            <a href="#">
+                                <h3>Vallery Festival 공지1</h3> 
+                                <p>2022.03.01</p>
+                            </a>
+                        </li>
+                        <li><!-- 공지2 -->
+                            <a href="#">
+                                <h3>Vallery Festival 공지2</h3> 
+                                <p>2022.03.01</p>
+                            </a>
+                        </li>
+                        <li><!-- 공지3 -->
+                            <a href="#">
+                                <h3>Vallery Festival 공지3</h3> 
+                                <p>2022.03.01</p>
+                            </a>
+                        </li>
+                        <li><!-- 공지4 -->
+                            <a href="#">
+                                <h3>Vallery Festival 공지4</h3> 
+                                <p>2022.03.01</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- 공지사항끝 -->
+                <div class="gallery">
+                    <h2>갤러리</h2>
+                    <ul>
+                        <li><a href="#"><img src="./images/gallery1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./images/gallery2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./images/gallery3.jpg" alt=""></a></li>
+                    </ul>
+                </div><!-- 갤러리끝 -->
+                <a href="#" class="shortcut"><!-- 바로가기 -->
+                    <img src="./images/shortcut.jpg" alt="바로가기">
+                    <span>바로가기</span>
+                </a><!-- 바로가기 끝 -->
+                <div id="modal"><!-- 팝업 -->
+                    <div class="modal_up">
+                        <p class="modal_title">무궁화 축제</p>
+                        <p class="modal_body">
+                            무궁무궁 무궁화 무궁화는 우리꽃,<br>
+                            피고 지고 또 피어 무궁화라네~<br>
+                            광복절을 맞이하여 무궁화 축제가 열립니다.<br>
+                            무궁화 전시, 무궁화 체험, 공연 등 많은 참여를 바랍니다.
+                        </p>
+                        <p class="btn">닫기</p>
+                    </div>
+                </div>
+            </div><!-- 컨텐츠끝 -->
+        </main>
+        <footer>
+            <p class="logo"><img src="./images/logo.png" alt="World Festival"></p>
+            <p class="copy">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</p>
+            <form action="#" id="familyFrm" method="get">
+                <fieldset>
+                    <legend class="skip">패밀리사이트 양식</legend>
+                    <select name="famly_site" id="famly_site">
+                        <option value="site1">패밀리사이트1</option>
+                        <option value="site2">패밀리사이트2</option>
+                        <option value="site3">패밀리사이트3</option>
+                    </select>
+                </fieldset>
+            </form>
+        </footer>
+    </div>
+</body>
+</html>

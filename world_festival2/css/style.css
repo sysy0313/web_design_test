@@ -1,0 +1,146 @@
+@charset "utf-8";
+* {box-sizing:border-box;}
+/* 리셋 */
+header, main, footer, div, h1, h2, h3, p, span, img, ul, li, select, option, fieldset,
+legend,form, a {
+    font-size:16px; color:#333333; padding:0; margin:0; text-decoration:none;
+    font-weight:normal; list-style:none;
+    
+}
+fieldset {border:none;}
+.skip {display:none;}
+/* style */
+body {width:1000px;  margin:0 auto;}
+header {
+    float:left; width:20%;
+}
+header h1 {width:100%;}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {text-align:center; position:relative;}
+header nav #gnb {}
+header nav #gnb li {}
+header nav #gnb > li > a {
+    background:#333333;
+    color:#ffffff; width:100%; padding:10px 0;
+    display:block; font-size:20px;
+}
+header nav #gnb > li > a:hover {
+    color:#ffff00;
+}
+header nav #gnb li .sub {
+    display:none;
+    position:absolute; left:100%; top:0;
+    width:200px; height:100%; 
+    background:#eeeeee;
+    z-index:100;
+
+}
+header nav #gnb li .sub li {}
+header nav #gnb li .sub li:hover {
+    background:#aaaaaa;
+}
+header nav #gnb li .sub li:hover a {
+    color:#ffff00;
+}
+header nav #gnb li .sub li a {font-size:20px; display:block; padding:10px 0; }
+.wrap {float:right; width:80%;}
+.wrap main {}
+.wrap main .image_slide {
+    position:relative; height:350px;
+}
+.wrap main .image_slide .slide {
+    height:350px;
+    position:absolute;
+}
+.wrap main .image_slide .slide:nth-child(2) {display:none;}
+.wrap main .image_slide .slide:nth-child(3) {display:none;}
+.wrap main .image_slide .slide span {
+    display:block; background:rgba(255,255,255,0.5);
+    position:absolute; top:45%; left:35%; 
+    font-size:30px; font-weight:bold;
+}
+.wrap main .content {
+    padding:20px 0;
+    height:200px; display:flex; flex-flow:row nowrap; justify-content:space-between;
+    
+}
+.wrap main .content .notice {
+    width:calc(33% - 30px / 3);
+}
+.wrap main .content .notice h2 {
+    font-size:20px; font-weight:bold; letter-spacing:-0.02em; margin-bottom:20px;
+}
+.wrap main .content .notice ul {}
+.wrap main .content .notice ul li {margin-bottom:10px;}
+.wrap main .content .notice ul li a{
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+.wrap main .content .notice ul li a:hover {transform:scale(1.03)}
+.wrap main .content .notice ul li a h3 {}
+.wrap main .content .notice ul li a p {}
+/* 갤러리 */
+.wrap main .content .gallery {
+    width:calc(33% - 30px / 3);
+}
+.wrap main .content .gallery h2 {
+    font-size:20px; font-weight:bold; letter-spacing:-0.02em; margin-bottom:20px;
+}
+.wrap main .content .gallery ul {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    padding-top:20px;
+}
+.wrap main .content .gallery ul li {}
+.wrap main .content .gallery ul li a {}
+.wrap main .content .gallery ul li a:hover img {filter:brightness(1.2)}
+.wrap main .content .gallery ul li a img {}
+.wrap main .content .shortcut {
+    width:calc(33% - 30px / 3);
+    position:relative;
+    text-align:center;
+}
+.wrap main .content .shortcut img {
+    height:100%;
+}
+.wrap main .content .shortcut span {
+    position:absolute;
+    width:80px; height:40px; background:rgba(255,255,255,0.5); line-height:40px;
+    display:block; top:80px; left:90px;
+}
+.wrap main .content #modal {
+    position:absolute;
+    background:rgba(0,0,0,0.3);
+    width:100%; height:100%; top:0; left:0;
+    padding-top:200px; 
+    display:none;
+}
+.wrap main .content #modal.active {display:block;}
+.wrap main .content #modal .modal_up {
+    background:#fff;
+    width:800px; margin:0 auto; 
+    text-align:center;
+    padding:70px; position:relative;
+}
+.wrap main .content #modal .modal_up .modal_title {
+    font-size:30px; font-weight:bold; margin-bottom:20px;
+}
+.wrap main .content #modal .modal_up .modal_body {
+    font-size:20px; line-height:40px;
+}
+.wrap main .content #modal .modal_up .btn {
+    font-size:20px; font-weight:bold; background:#eeeeee; 
+    width:100px; height:40px; line-height:40px;
+    position:absolute; bottom: 20px; right:20px;
+    cursor:pointer; 
+}
+.wrap footer {
+    background:#f1f1f1;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    align-items:center; height:150px; padding:0 15px;
+}
+.wrap footer .logo {}
+.wrap footer .copy {}
+.wrap footer #famliyFrm {}
+.wrap footer #famliyFrm fieldset {}
+.wrap footer #famliyFrm fieldset #famly_site {}
+.wrap footer #famliyFrm fieldset #famly_site option {}

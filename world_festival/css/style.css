@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* reset */
+* {box-sizing:border-box;}
+header, h1, a, img, nav, ul, li, div, h2, p, h3, span, main, footer, form, legend, fieldset, select, option {
+    font-size:16px; font-weight:normal; color:#333333; text-decoration:none; 
+    padding:0; margin:0;
+    font-family:"맑은 고딕";
+}
+li {list-style:none;}
+.skip {display:none;}
+fieldset {border:none;}
+/* style */
+div#wrap{
+    width:1000px; margin:0 auto;
+}
+div#wrap header {
+    width:200px;
+    display:flex; flex-flow:column nowrap; align-items:center;
+    float:left; position:relative;
+
+}
+div#wrap header h1 {
+    margin:20px 0 20px;
+    width:200px; 
+}
+div#wrap header h1 a {}
+div#wrap header h1 a img {width:100%;}
+/* 메뉴 */
+div#wrap header nav {
+    position:absolute; top:100px; left:10px; text-align:center;
+}
+div#wrap header nav ul#menu {}
+div#wrap header nav ul#menu > li {
+    
+    
+}
+div#wrap header nav ul#menu > li > a {
+    display:inline-block;
+    width: 180px; height:50px; text-align:center;
+    line-height:50px; font-size:19px; font-weight:bold;
+    background:#333333; color:#ffffff;
+}
+div#wrap header nav ul#menu > li > a:hover {
+    background:#eeeeee; color:#333333;
+}
+div#wrap header nav ul#menu li ul.sub {
+    width:180px; height:100%;
+    background:#aaaaaa;
+    position:absolute; left:180px; top:0px; z-index:1;
+    display:none;
+}
+div#wrap header nav ul#menu li ul.sub li {
+    
+}
+div#wrap header nav ul#menu li ul.sub li a {
+    display:block;
+    width:180px; height:40px; font-size:19px; line-height:40px; font-weight:bold;
+}
+div#wrap header nav ul#menu li ul.sub li:hover {background:#666666;}
+div#wrap header nav ul#menu li ul.sub li:hover a {color:#ffff00;}
+/* header 끝 */ 
+div#wrap div.wrap_main_footer {
+    float:right;
+    width:785px; 
+}
+div#wrap div.wrap_main_footer main {
+    padding-bottom:20px;
+}
+/* 슬라이드 */
+div#wrap div.wrap_main_footer main div.slide {
+    height:350px;
+    margin-bottom:15px; position:relative; 
+}
+div#wrap div.wrap_main_footer main div.slide .slide_content {
+    position:absolute;
+    
+}
+div#wrap div.wrap_main_footer main div.slide .slide_content img {width:100%;}
+div#wrap div.wrap_main_footer main div.slide .slide1{}
+div#wrap div.wrap_main_footer main div.slide .slide2{}
+div#wrap div.wrap_main_footer main div.slide .slide3{}
+div#wrap div.wrap_main_footer main .slide .slide_content span {
+    background:rgba(255,255,255,0.2); display:block;
+    width:200px; height:50px; text-align:center; line-height:50px;
+    font-size:20px; font-weight:bold; color:#fff;
+    position:absolute; top:40%; left:37%;
+}
+
+div#wrap div.wrap_main_footer main div.content {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; height:200px;
+}
+div#wrap div.wrap_main_footer main div.content h2 {font-size:19px; font-weight:bold; margin-bottom:20px;}
+/* 공지사항 */
+div#wrap div.wrap_main_footer main div.content div.notice {
+    width:280px; 
+}
+div#wrap div.wrap_main_footer main div.content div.notice h2.content_title {}
+div#wrap div.wrap_main_footer main div.content div.notice ul {}
+div#wrap div.wrap_main_footer main div.content div.notice ul li {
+    margin-bottom:15px;
+}
+div#wrap div.wrap_main_footer main div.content div.notice ul li:hover{
+    background:#aaaaaa;
+}
+div#wrap div.wrap_main_footer main div.content div.notice ul li:last-child {margin-bottom:0}
+div#wrap div.wrap_main_footer main div.content div.notice ul li a {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+div#wrap div.wrap_main_footer main div.content div.notice ul li a h3 {}
+div#wrap div.wrap_main_footer main div.content div.notice ul li a p {}
+/* 갤러리 */
+div#wrap div.wrap_main_footer main div.content div.gallery {
+    width:280px;
+}
+div#wrap div.wrap_main_footer main div.content div.gallery h2.content_title {
+    margin-bottom:40px;
+}
+div#wrap div.wrap_main_footer main div.content div.gallery ul {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    
+}
+div#wrap div.wrap_main_footer main div.content div.gallery ul li {
+    width:calc(33% - 20px /3);
+}
+div#wrap div.wrap_main_footer main div.content div.gallery ul li a {}
+div#wrap div.wrap_main_footer main div.content div.gallery ul li a img {width:100%;}
+/* 바로가기 */
+div#wrap div.wrap_main_footer main div.content a.shortcut {
+    width:200px;
+    position:relative;
+}
+div#wrap div.wrap_main_footer main div.content a.shortcut img {
+    width:100%;
+}
+div#wrap div.wrap_main_footer main div.content a.shortcut span {
+    position:absolute;
+    display:block; background:rgba(255,255,255,0.2); padding:5px;
+    top:80px; left:35%; 
+}
+/* 레이어팝업창 */
+div#wrap div.wrap_main_footer main #modal {
+    position:absolute; width:100%; height:100%; top:0; left:0;
+    z-index:100;
+    background:rgba(0,0,0,0.6); 
+    display:none;
+    
+}
+div#wrap div.wrap_main_footer main #modal.active {display:block;}
+div#wrap div.wrap_main_footer main #modal .modal_up {
+    width:400px; height:300px; position:fixed; left:40%; top:20%;
+    background:#ffffff;
+}
+div#wrap div.wrap_main_footer main #modal .modal_up .up_title {
+    margin-top:30px; text-align:center; font-weight:bold; font-size:20px; 
+    line-height:16px; 
+}
+div#wrap div.wrap_main_footer main #modal .modal_up .up_body {
+    padding:30px; text-align:center; line-height:30px;
+}
+div#wrap div.wrap_main_footer main #modal .modal_up .btn {
+    position:absolute; right:15px; bottom:10px; 
+    width:100px; height:30px; background:#eeeeee; text-align:center;
+    line-height:30px;
+    cursor:pointer
+}
+/* footer */
+div#wrap div.wrap_main_footer footer {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    height:100px; padding:0 10px;
+    background:#eeeeee;
+}
+div#wrap div.wrap_main_footer footer p.logo {width:200px;}
+div#wrap div.wrap_main_footer footer p.logo a {}
+div#wrap div.wrap_main_footer footer p.logo a img {width:100%;}
+div#wrap div.wrap_main_footer footer p.copy {}
+div#wrap div.wrap_main_footer footer form.family_site {}
+div#wrap div.wrap_main_footer footer form.family_site fieldset {}
+div#wrap div.wrap_main_footer footer form.family_site select.family_site_list {}
+div#wrap div.wrap_main_footer footer form.family_site select.family_site_list option {}
