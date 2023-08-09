@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* 리셋 */
+* {box-sizing:border-box;}
+header, main, footer, h1, h2, h3, p, span, a, nav, ul, li, form,
+fieldset, legend, select, option, div {
+    padding:0; margin:0; color:#333333; 
+    text-decoration:none; font-weight:normal; font-size:16px;
+    list-style:none;
+}
+.skip {display:none;}
+fieldset {border:none;}
+
+/* style */
+/* header */
+body {
+    width:1000px; margin:0 auto;
+}
+header {
+    float:left; width:20%;
+}
+header h1 { padding:30px 10px;
+    margin-bottom:20px;
+}
+header h1 a {}
+header h1 a img {width:100%;}
+/* 네비 */
+header nav {
+    background:#333333;
+    text-align:center;
+    position:relative;
+    width:180px; margin-left:10px;
+}
+header nav #gnb {}
+header nav #gnb > li {}
+header nav #gnb > li > a {
+    font-size:20px; font-weight:bold; color:#ffffff; 
+    padding:20px 0; display:block;
+}
+header nav #gnb > li:hover > a {
+    color:#ffff00;
+}
+header nav #gnb > li .sub {
+    background:#eeeeee; height:100%;
+    position:absolute; top:0; left:180px;
+    width:180px; z-index:100;
+    display:none;
+}
+header nav #gnb > li .sub li {}
+header nav #gnb > li .sub li a {
+    padding:20px 0;  display:block; font-size:20px;
+}
+header nav #gnb > li .sub li a:hover {
+    color:#ffff00; background:#aaaaaa;
+}
+/* 네비끝 */
+/* 메인 */
+.wrap {float:right; width:80%;}
+main {}
+/* 슬라이드 */
+main .slide {height:350px; position:relative;}
+main .slide a {position:absolute;}
+main .slide a img {}
+main .slide a span {
+    position:absolute; top:40%; left:33%;
+    display:block; background:rgba(255,255,255,0.5);
+    padding:10px 20px; font-size:30px; font-weight:bold;
+}
+/* 컨텐츠 */
+/* 공지사항 */
+main .content {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    height:200px;
+    padding:20px 0;
+}
+main .content .notice {
+    width:calc(33.33% - 40px / 3);
+}
+main .content .notice h2 {font-size:20px; font-weight:bold; margin-bottom:20px; }
+main .content .notice ul {}
+main .content .notice ul li {margin-bottom:10px;}
+main .content .notice ul li a {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .content .notice ul li a:hover h3, main .content .notice ul li a:hover p {
+    font-weight:bold;
+}
+main .content .notice ul li a h3 {}
+main .content .notice ul li a p {}
+/* 갤러리 */
+main .content .gallery {
+    width:calc(33.33% - 40px / 3);
+}
+main .content .gallery h2 {
+    font-size:20px; font-weight:bold; margin-bottom:20px; 
+}
+main .content .gallery .img {}
+main .content .gallery .img a {}
+main .content .gallery .img a img {}
+main .content .gallery .img a:hover img {filter:brightness(1.2)}
+/* 바로가기 */
+main .content .shortcut {
+    background:url(../images/shortcut.jpg) no-repeat;
+    background-size:cover;
+    width:calc(33.33% - 40px / 3);
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
+}
+main .content .shortcut p {
+    font-size:20px; font-weight:bold; background:rgba(255,255,255,0.5);
+    width:100px; height:40px; line-height:40px; text-align:center;
+}
+/* 팝업 */
+main .content #modal {
+    display:none;
+    position:absolute;
+    background:rgba(0,0,0,0.5);
+    width:100%; height:100%; top:0; left:0; padding:200px;
+    z-index:200;
+}
+main .content #modal.active {display:block; }
+main .content #modal .modal_up {
+    background:#ffffff; width:800px;
+    text-align:center; padding:70px; 
+    position:relative;
+    margin:0 auto;
+}
+main .content #modal .modal_up .modal_title {
+    font-size:30px; font-weight:bold; margin-bottom:20px; 
+}
+main .content #modal .modal_up .modal_body {
+    font-size:20px; line-height:40px;
+}
+main .content #modal .modal_up .close {
+    font-size:20px; background:#eeeeee; width:200px; height:40px; 
+    line-height:40px; position:absolute; bottom:10px; right:10px;
+    cursor:pointer;
+}
+/* footer */
+footer {
+    height:100px; background:#eeeeee;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+footer .logo {
+    width:150px;
+}
+footer .logo a {}
+footer .logo a img {width:100%;}
+footer .copy {}
+footer #familyFrm {}
+footer #familyFrm fieldset {}
+footer #familyFrm fieldset #family_site {}
+footer #familyFrm fieldset #family_site option {}
