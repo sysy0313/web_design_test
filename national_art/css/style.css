@@ -1,0 +1,148 @@
+@charset "utf-8";
+* {box-sizing:border-box;}
+h1, h2, h3, p, em, span, a, div, ul, li, dl, dd, dt, img, button {
+    padding:0; margin:0; list-style:none; text-decoration:none; 
+    color:#333333; font-size:16px;  font-weight:normal; 
+}
+/* style */
+header, main, footer {
+    width:1200px; margin:0 auto;
+}
+/* header */
+header {
+    background:lemonchiffon;
+    height:100px; padding:0 20px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+header h1 {width:150px;}
+header h1 a {}
+header h1 a img {width:100%;}
+/* nav */
+header nav {position:relative;}
+header nav #menu {
+    display:flex; flex-flow:row nowrap; 
+}
+header nav #menu li:hover a {
+    background:yellow;
+}
+header nav #menu li {}
+header nav #menu > li > a {
+    background:pink; 
+    width:150px; height:50px; display:block; 
+    font-size:1.333rem; line-height:50px; text-align:center; font-weight:bold;
+}
+/* sub */
+header nav #menu li .sub {
+    background:lightcoral; width:150px;
+    position:absolute;
+}
+header nav #menu li .sub li {}
+header nav #menu li .sub li:hover a {background:blue;}
+header nav #menu li .sub li a {
+    background:skyblue;
+    display:block; 
+    width:150px; height:50px; text-align:center; font-size:1.2rem; line-height:50px;
+    font-weight:bold; 
+}
+/* main */
+main {}
+/* slide */
+main #slide {
+    background:pink;
+    height:300px;
+    overflow:hidden;
+}
+main #slide .slide_list {
+    height:900px; position:relative;
+}
+main #slide .slide_list a {
+    width:100%; height:300px; position:absolute;
+}
+main #slide .slide_list a img{width:100%; height:100%;}
+main #slide .slide_list .slide1 {}
+main #slide .slide_list .slide2 {top:300px;}
+main #slide .slide_list .slide3 {top:600px;}
+/* con */
+main #con {
+    background:lightskyblue;
+    height:200px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    padding:20px 10px;
+}
+main #con .con1 {
+    width:calc(33.33% - 40px / 3);
+}
+/* tab_title */
+main #con .con1 .tab_title {
+    display:flex; flex-flow:row nowrap;
+}
+main #con .con1 .tab_title h2 {
+    background:green; margin-right:10px; 
+    font-size:1.25rem; font-weight:bold; padding:10px; cursor:pointer;
+}
+main #con .con1 .tab_title h2.active {background:lightgreen;}
+main #con .con1 .tab_title .tab1 {}
+main #con .con1 .tab_title .tab2 {}
+/* notice */
+main #con .con1 .notice {
+    background:white;
+}
+main #con .con1 .notice ul {}
+main #con .con1 .notice ul li {margin-bottom:10px; }
+main #con .con1 .notice ul li a {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main #con .con1 .notice ul li a h3 {}
+main #con .con1 .notice ul li a p {}
+/* gallery */
+main #con .con1 .gallery {}
+main #con .con1 .gallery ul {display:flex; flex-flow:row nowrap; justify-content:center; padding:10px 0; }
+main #con .con1 .gallery ul li {width:calc(33.33% - 20px / 3)}
+main #con .con1 .gallery ul li a {}
+main #con .con1 .gallery ul li a img {width:80%}
+/* con2 */
+main #con .con2 {width:calc(33.33% - 40px / 3); text-align:center;}
+main #con .con2 a {}
+main #con .con2 a img {height:100%;}
+/* con3 */
+main #con .con3 {width:calc(33.33% - 40px / 3);}
+main #con .con3 a {
+    display:block; width:100%; height:100%;
+    background:url(../image/shortcut.jpg);
+    display:flex; flex-flow:row; justify-content:center; align-items:center;
+}
+main #con .con3 a h2 {
+    font-size:1.25rem; font-weight:bold;
+    background:rgba(255,255,255,0.5);
+    width:150px; text-align:center; 
+}
+/* layer */
+main #layer {
+    position:fixed; top:calc(50% - 600px / 2); left:calc(50% - 400px / 2);
+}
+main #layer .layer_up {
+    background:#fff; width:600px; height:400px; 
+    padding:50px;
+    
+}
+main #layer .layer_up dl {text-align:center;}
+main #layer .layer_up dl dt {
+    font-size:1.333rem; font-weight:bold; margin-bottom:20px;
+}
+main #layer .layer_up dl dd {line-height:40px;}
+main #layer .layer_up #close {
+    cursor:pointer; position:absolute; bottom:25px; right:25px;
+}
+/* footer */
+footer {
+    background:pink;
+    height:100px; padding:20px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+footer .logo {width:150px}
+footer .logo img {width:100%}
+footer .copy {}
+footer .sns {}
+footer .sns a {
+    display:inline-block; width:40px; height:40px;
+    border-radius:50%; overflow:hidden; 
+}
+footer .sns a img {width:100%;}
