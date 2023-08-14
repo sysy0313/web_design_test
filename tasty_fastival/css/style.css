@@ -1,0 +1,139 @@
+@charset "utf-8";
+* {box-sizing:border-box;}
+header, main, footer, section, h1, h2, h3, ul, li, p, a, span, em, img, div {
+    padding:0;  margin:0; list-style:none; text-decoration:none;
+    color:#333333; 
+    font-style:normal; font-weight:normal; font-size:16px;
+}
+#all {
+    width:1000px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+}
+header {
+    background:pink;
+    width:20%; padding:20px;
+}
+header h1 {width:100%;}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {text-align:center;}
+header nav #menu {}
+header nav #menu > li { position:relative}
+header nav #menu > li > a {
+    display:block;
+    background:lemonchiffon;
+    width:150px; height:50px; 
+    font-size:1.25rem; font-weight:bold; line-height:50px;
+}
+header nav #menu > li:hover > a {background:skyblue;}
+header nav #menu > li > .sub {
+    position:absolute;
+    background:#fff;
+    left:150px; top:0;
+    z-index:900;
+}
+header nav #menu > li > .sub li {}
+header nav #menu > li > .sub li a {
+    display:block;
+    width:150px; height:50px; 
+    font-size:1.2rem; line-height:50px;
+}
+header nav #menu > li > .sub li a:hover {background:pink;}
+/* #wrap */
+#wrap {
+    background:skyblue;
+    width:80%;
+}
+#wrap main {
+}
+/* slide */
+#wrap main #slide {width:100%; height:350px; overflow:hidden;}
+#wrap main #slide .slide_list {position:relative;}
+#wrap main #slide .slide_list a {
+    display:block;
+    width:100%; height:350px;
+    position:absolute; 
+}
+#wrap main #slide .slide_list a:nth-child(1) {top:0;}
+#wrap main #slide .slide_list a:nth-child(2) {top:0; left:800px}
+#wrap main #slide .slide_list a:nth-child(3) {top:0; left:1600px}
+#wrap main #slide .slide_list a img {width:100%; height:350px; left:800px;}
+/* contents */
+#wrap main #contents {
+    background:gold;
+    height:200px; 
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    padding:20px 10px;
+}
+/* 공지사항 */
+#wrap main #contents .con1 {
+    width:300px;
+}
+#wrap main #contents .con1 h2 {
+    font-size:1.25rem; font-weight:bold; margin-bottom:10px;
+}
+#wrap main #contents .con1 h2 ul {}
+#wrap main #contents .con1  ul li {margin-bottom:10px;}
+#wrap main #contents .con1 ul li a {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+#wrap main #contents .con1 ul li a:hover p {font-weight:bold;}
+#wrap main #contents .con1 ul li a p {}
+/* 갤러리 */
+#wrap main #contents .con2 {width:300px;}
+#wrap main #contents .con2 h2 {
+    font-size:1.25rem; font-weight:bold; margin-bottom:10px;
+}
+#wrap main #contents .con2 .gallery {padding:10px 0;}
+#wrap main #contents .con2 .gallery a {display:inline-block; width:calc(33.33% - 20px /3)}
+#wrap main #contents .con2 .gallery a img {width:100%;}
+/* 바로가기 */
+#wrap main #contents .con3 {
+    width:160px;
+    background:url(../images/shortcut.jpg);
+    position:relative;
+}
+#wrap main #contents .con3 a {}
+#wrap main #contents .con3 a h2 {
+    background:rgba(255,255,255,0.5);
+    width:100px; height:50px; line-height:50px; text-align:center;
+    position:absolute; top:calc(50% - 50px / 2); left:calc(50% - 100px / 2);
+    font-size:1.25rem; font-weight:bold;
+}
+/* 모달 */
+#wrap main #modal {
+    position:fixed;
+    background:rgba(0,0,0,0.5);
+    width:100%; height:100%; top:0; left:0;
+    z-index:9999;
+}
+#wrap main #modal .modal_up {
+    background:#ffffff; width:600px; height:400px; 
+    position:absolute;
+    top:calc(50% - 400px / 2); left:calc(50% - 600px / 2);
+    padding:30px 20px;
+    text-align:center;
+}
+#wrap main #modal .modal_up h3 {
+    font-weight:bold; font-size:1.333rem; 
+    margin-bottom:20px;
+}
+#wrap main #modal .modal_up .modal_con {
+    line-height:30px;
+}
+#wrap main #modal .modal_up #close {
+    position:absolute;
+    bottom:25px; right:25px;
+    cursor:pointer;
+}
+/* footer */
+#wrap footer {
+    height:100px; 
+    display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+}
+#wrap footer .logo {}
+#wrap footer .logo img {}
+#wrap footer .right {}
+#wrap footer .right .fnb {}
+#wrap footer .right .fnb a {}
+#wrap footer .right .copy {}
