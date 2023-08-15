@@ -1,0 +1,152 @@
+@charset "utf-8";
+* {box-sizing:border-box;}
+header, main, footer, div, section, p, h1, h2, h3, a, ul, li, img {
+    margin:0; padding:0; list-style:none; text-decoration:none; font-style:normal; 
+    font-size:16px; color:#333; font-weight:normal; 
+}
+/* style */
+header, main, footer {width:1200px; margin:0 auto;}
+header {
+    height:100px; padding:0 20px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+
+}
+header h1 {}
+/* nav */
+header nav {position:relative; text-align:center; }
+header nav #menu {
+    display:flex; flex-flow:row nowrap; 
+}
+header nav #menu > li {}
+header nav #menu > li > a {
+    display:block; background:#5e1742; color:#fff; font-weight:bold;
+    width:120px; height:40px; font-size:1.2rem;  line-height:40px;
+}
+header nav #menu > li:hover > a {
+    background:#c9463d;
+}
+/* sub */
+header nav #menu > li > .sub {
+    position:absolute;
+    z-index:100;
+}
+header nav #menu > li > .sub li {}
+header nav #menu > li > .sub li a {
+    display:block;
+    width:120px; height:30px; line-height:30px;
+}
+header nav #menu > li > .sub li a:hover {
+    background:#5e1742; color:#fff;
+}
+header nav .sub_bg {
+    position:absolute;
+    width:480px; height:150px;
+    background:#eee;
+    top:40px;
+    z-index:90;
+}
+/* main */
+main {}
+/* 슬라이드 */
+main #slide {
+    height:300px;
+}
+main #slide .slide_list {position:relative;}
+main #slide .slide_list a {position:absolute;}
+main #slide .slide_list a img {height:300px;}
+/* 컨텐츠 */
+main #contents {
+    height:200px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; 
+    padding:10px 0;
+    overflow:hidden;
+    
+}
+/* 탭 */
+main #contents .tab {
+    width:calc(33.33% - 20px / 3)
+    
+}
+/* 탭제목 */
+main #contents .tab .tab_title {
+    display:flex; flex-flow:row; border-bottom:1px solid #5e1742;
+    margin-bottom:15px;
+}
+main #contents .tab .tab_title h2 {}
+main #contents .tab .tab_title h2.active {}
+main #contents .tab .tab_title h2.active a {
+    background:#5e1742; color:#fff;
+}
+main #contents .tab .tab_title h2 a {
+    width:70px; height:30px; display:block;
+    background:#eee; text-align:center;
+    line-height:30px; 
+}
+/* 공지사항 */
+main #contents .tab .notice {}
+main #contents .tab .notice ul {
+    padding:0 5px;
+}
+main #contents .tab .notice ul li {
+    margin-bottom:10px;
+}
+main #contents .tab .notice ul li a {
+    display:flex; flex-flow:row nowrap;  justify-content:space-between ;
+}
+main #contents .tab .notice ul li a p {letter-spacing:-0.02em;}
+main #contents .tab .notice ul li a:hover p {font-weight:bold;}
+/* 갤러리 */
+main #contents .tab .gallery {margin-top:20px;}
+main #contents .tab .gallery a {
+    display:inline-block; overflow:hidden;
+    width:calc(33.33% - 20px / 3); height:120px;
+}
+main #contents .tab .gallery a img {width:100%; height:120px; transition:all 0.5s;}
+main #contents .tab .gallery a img:hover {transform:scale(1.1);}
+/* banner */
+main #contents .banner {width:calc(33.33% - 20px / 3); text-align:center;}
+main #contents .banner img {width:100%; height:180px;}
+/* shortcut */
+main #contents .shortcut {width:calc(33.33% - 20px / 3); text-align:center;}
+main #contents .shortcut img {width:100%; height:180px;}
+/* layer */
+main #layer {
+    position:fixed; 
+    top:calc(50% - 300px / 2);
+    left:calc(50% - 600px / 2);
+
+}
+main #layer .layer_up {
+    background:#fff; border:2px solid #5e1742;
+    width:600px; height:300px;
+    text-align:center;
+    padding:30px;
+    position:absolute;
+}
+main #layer .layer_up h3 {
+    font-size:1.3rem; font-weight:bold; margin-bottom:20px;
+    color:#5e1742;
+}
+main #layer .layer_up p {
+    font-size:1.2rem; line-height:30px;
+}
+main #layer .layer_up .close {
+    position:absolute; right:25px; bottom:25px;
+    display:block; width:50px; height:30px; background:#5e1742; color:#fff;
+    line-height:30px; border-radius:5px;
+}
+main #layer .layer_up .close:hover {background:#c9463d;}
+/* footer */
+footer {
+    height:100px; background:#5e1742;
+    padding:0 20px;
+    display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+}
+footer .logo {}
+footer .logo img {}
+footer .copy {
+    color:#fff;
+}
+footer .sns {}
+footer .sns a {}
+footer .sns a img {}
